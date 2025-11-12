@@ -2,6 +2,10 @@
 
 This is a small web app that helps visualize the dimming zones of a monitor. It's useful for understanding what local dimming looks like and how much detail you can expect from a given number of zones.
 
+## Live Demo
+
+You can try the live demo here: [https://sandman21dan.github.io/dimming-zones/](https://sandman21dan.github.io/dimming-zones/)
+
 ## How it works
 
 The application calculates the aspect ratio of your screen and then divides it into a grid of dimming zones. Each zone is represented by a white rectangle on a black background.
