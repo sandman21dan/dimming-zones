@@ -2,14 +2,14 @@
   "name": "dimming-zones",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "build": "parcel build src/index.html",
     "start": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.8.3"
+    "parcel": "^2.16.1"
   }
 }

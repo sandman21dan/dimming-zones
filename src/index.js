@@ -45,9 +45,16 @@ function calculateDimmingZones(dimmingZones) {
 }
 
 function main() {
-    calculateDimmingZones(576);
-    // calculateDimmingZones(1196);
-    // calculateDimmingZones(1152);
+    const urlParams = new URLSearchParams(window.location.search);
+    let dimmingZones = urlParams.get('dimming_zones');
+
+    if (!dimmingZones) {
+        dimmingZones = 1152;
+        const newUrl = `${window.location.pathname}?dimming_zones=${dimmingZones}`;
+        window.history.replaceState({}, '', newUrl);
+    }
+
+    calculateDimmingZones(dimmingZones);
 }
 
 main();
